@@ -1,22 +1,20 @@
-
 ;;; package --- Main init file
 ;;; Commentary:
 ;;; This is my init file
 
 ;;; Code:
-(package-initialize)
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(package-refresh-contents)
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
 
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
 
 ;; +------------------------------+
 ;; | REQUIRES PACKAGES            |
 ;; +------------------------------+
-(require 'evil)
-(evil-mode 1)
 
 (require 'base)
 (require 'base-theme)
@@ -40,21 +38,8 @@
 
 ;; --------------------------------
 
-
-(setq-default indent-tabs-mode nil)
-(define-key text-mode-map (kbd "<tab>") 'tab-to-tab-stop)
-(setq tab-stop-list (number-sequence 2 200 2))
-
-(setq backup-directory-alist '(("." . "~/backup/emacs"))
-      backup-by-copying      t      ; dont delink hard links
-      version-control        t      ; use version numbers on backups
-      delete-old-versions    t      ; automatically delete excess backups
-      kept-new-versions      20     ; how many of the newest versions to keep
-      kept-old-versions      5)     ; how many of the old
-
-(setq inhibit-startup-screen t)
-(menu-bar-mode 0)
-(tool-bar-mode 0)
+; enable evil-mode
+(evil-mode 1)
 
 (electric-indent-mode 0) ; turn off all autoindentation
 
@@ -106,6 +91,5 @@
   (end-of-line)
   (insert "-------- -- ")
 )
-
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))

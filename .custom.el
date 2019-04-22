@@ -3,11 +3,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(js2-strict-inconsistent-return-warning nil)
- '(js2-strict-missing-semi-warning nil)
+ '(delete-selection-mode nil)
  '(package-selected-packages
    (quote
-    (evil company-c-headers ggtags rust-mode intero haskell-mode impatient-mode web-mode js2-refactor js-comint company-tern tern js2-mode phpunit ac-php pyenv-mode py-autopep8 pip-requirements elpy yasnippet wgrep which-key undo-tree smex smartparens org-bullets org-projectile neotree multiple-cursors magit-popup magit hlinum counsel-projectile counsel flycheck expand-region exec-path-from-shell dashboard company avy solarized-theme use-package))))
+    (evil which-key wgrep web-mode use-package undo-tree solarized-theme smex smartparens rust-mode pyenv-mode py-autopep8 pip-requirements phpunit org-projectile org-bullets neotree magit-popup magit js2-refactor js-comint intero impatient-mode hlinum ggtags expand-region exec-path-from-shell elpy dashboard counsel-projectile company-tern company-c-headers avy ac-php))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

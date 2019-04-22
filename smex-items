@@ -2,17 +2,19 @@
 ;; ----- smex-history -----
 (
  evil-mode
- evil-ex
  package-install
+ Info-prev
+ package-refresh-contents
  cd
  5x5
  arp
- dbx
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 1)
+ (package-install . 3)
  (evil-ex . 1)
- (evil-mode . 3)
+ (evil-mode . 5)
+ (package-refresh-contents . 1)
+ (Info-prev . 1)
 )
