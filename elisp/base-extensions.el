@@ -9,12 +9,12 @@
 
 (use-package company
   :config
-  (add-hook 'after-init-hook 'global-company-mode)
-  (setq dashboard-startup-banner 1))
+  (add-hook 'after-init-hook 'global-company-mode))
 
 (use-package dashboard
   :config
-  (dashboard-setup-startup-hook))
+  (dashboard-setup-startup-hook)
+  (setq dashboard-startup-banner 2))
 
 (use-package ediff
   :config
