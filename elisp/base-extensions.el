@@ -3,13 +3,14 @@
   :bind
   ("C-c SPC" . avy-goto-char))
 
-(use-package evil-mode
+(use-package evil
   :config
   (evil-mode 1))
 
 (use-package company
   :config
-  (add-hook 'after-init-hook 'global-company-mode))
+  (add-hook 'after-init-hook 'global-company-mode)
+  (setq dashboard-startup-banner 1))
 
 (use-package dashboard
   :config
