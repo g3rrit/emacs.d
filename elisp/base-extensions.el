@@ -3,6 +3,9 @@
   :bind
   ("C-c SPC" . avy-goto-char))
 
+(use-package evil-mode
+  :config
+  (evil-mode 1))
 
 (use-package company
   :config
@@ -68,9 +71,9 @@
 
 (use-package magit
   :config
-  
+
   (setq magit-completing-read-function 'ivy-completing-read)
-  
+
   :bind
   ;; Magic
   ("C-x g s" . magit-status)
@@ -125,9 +128,9 @@
   :config
   (setq projectile-known-projects-file
         (expand-file-name "projectile-bookmarks.eld" temp-dir))
-  
+
   (setq projectile-completion-system 'ivy)
-  
+
   (projectile-global-mode))
 
 (use-package recentf

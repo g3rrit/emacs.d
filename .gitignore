@@ -1,3 +1,6 @@
 private
 elpa
 auto-save-list
+smex-items
+snippets
+ede-projects.el

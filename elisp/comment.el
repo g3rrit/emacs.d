@@ -1,0 +1,51 @@
+(defun c-comment-block ()
+  "function for creating commment block c-style."
+  (interactive)
+  (beginning-of-line)
+  (insert "//---------------------------------------")
+  (newline)
+  (insert "// ")
+  (end-of-line)
+  (newline)
+  (insert "//---------------------------------------")
+)
+
+(defun c-comment-line ()
+  "function for creating comment line c-style."
+  (interactive)
+  (end-of-line)
+  (setq w (point))
+  (beginning-of-line)
+  (setq w (- w (point)))
+  (setq w (- 34 w))
+  (insert "// -- ")
+  (end-of-line)
+  (insert " ")
+  (while (> w 0)
+    (insert "-")
+    (setq w (1- w)))
+)
+
+(defun hs-comment-block ()
+  "function for creating commment block c-style."
+  (interactive)
+  (beginning-of-line)
+  (insert "---------------------------------------")
+  (newline)
+  (insert "-- ")
+  (end-of-line)
+  (newline)
+  (insert "---------------------------------------")
+)
+
+(defun hs-comment-line ()
+  "function for creating comment line c-style."
+  (interactive)
+  (beginning-of-line)
+  (insert "-- -------- ")
+  (end-of-line)
+  (insert "-------- -- ")
+)
+
+(provide 'comment)
+;;; comment ends here
