@@ -9,6 +9,7 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 ;; (package-initialize)
+(package-refresh-contents)
 
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
 
