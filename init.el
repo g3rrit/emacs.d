@@ -38,4 +38,6 @@
 
 (require 'comment)
 
+(require 'config)
+
 ;; --------------------------------
