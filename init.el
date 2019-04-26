@@ -39,6 +39,6 @@
 
 (require 'comment)
 
-(require 'config)
+(require 'base-config)
 
 ;; --------------------------------
