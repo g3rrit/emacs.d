@@ -37,6 +37,8 @@
 
 (require 'lang-c)
 
+(require 'lang-lua)
+
 (require 'comment)
 
 (require 'base-config)
