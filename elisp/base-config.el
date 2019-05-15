@@ -4,6 +4,7 @@
 (setq tab-width 2)
 (setq default-tab-width 2)
 (setq-default tab-always-indent t)
+(setq tab-stop-list (number-sequence 2 120 2))
 ;(defun tab-insert-whitespace ()
 ;  "Insert two whitspace chars"
 ;  (interactive)
