@@ -44,6 +44,7 @@
   :bind
   ("C-x v" . counsel-projectile)
   ("C-x c p" . counsel-projectile-ag)
+  ("C-j" . find-file)
   :config
   (counsel-projectile-on))
 
