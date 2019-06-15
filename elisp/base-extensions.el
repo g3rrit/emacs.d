@@ -32,21 +32,20 @@
 
 (use-package flycheck)
 
+;; (use-package counsel
+;;   :bind
+;;   ("M-x" . counsel-M-x)
+;;   ("C-x C-m" . counsel-M-x)
+;;   ("C-x C-f" . counsel-find-file)
+;;   ("C-x c k" . counsel-yank-pop))
 
-(use-package counsel
-  :bind
-  ("M-x" . counsel-M-x)
-  ("C-x C-m" . counsel-M-x)
-  ("C-x C-f" . counsel-find-file)
-  ("C-x c k" . counsel-yank-pop))
-
-(use-package counsel-projectile
-  :bind
-  ("C-x v" . counsel-projectile)
-  ("C-x c p" . counsel-projectile-ag)
-  ("C-j" . find-file)
-  :config
-  (counsel-projectile-on))
+;; (use-package counsel-projectile
+;;   :bind
+;;   ("C-x v" . counsel-projectile)
+;;   ("C-x c p" . counsel-projectile-ag)
+;;   ("C-j" . find-file)
+;;   :config
+;;   (counsel-projectile-on))
 
 (use-package ivy
   :bind
