@@ -39,6 +39,8 @@
 
 (require 'lang-lua)
 
+(require 'lang-prolog)
+
 (require 'comment)
 
 (require 'base-config)
