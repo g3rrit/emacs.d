@@ -17,6 +17,18 @@
 	   "\\)"
 	   "\\s *\\=")))
 
+
+  (defun lua-goto-nonblank-previous-line ()
+    "Puts the point at the first previous line that is not blank.
+    Returns the point, or nil if it reached the beginning of the buffer"
+    (catch 'found
+      (beginning-of-line)
+      (while t
+        (if (bobp) (throw 'found nil))
+        (forward-char -1)
+        (beginning-of-line)
+        (if (not (looking-at "\\s *\\(--.*\\)?$")) (throw 'found (point))))))
+
   (defun lua-calculate-indentation (&optional parse-start)
     "Overwrites the default lua-mode function that calculates the
      column to which the current line should be indented to."

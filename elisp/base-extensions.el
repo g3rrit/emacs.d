@@ -1,12 +1,3 @@
-
-(use-package avy
-  :bind
-  ("C-c SPC" . avy-goto-char))
-
-(use-package company
-  :config
-  (add-hook 'after-init-hook 'global-company-mode))
-
 (use-package dashboard
   :config
   (dashboard-setup-startup-hook)
@@ -26,12 +17,6 @@
     (exec-path-from-shell-copy-env "PYTHONPATH")
     (exec-path-from-shell-initialize)))
 
-(use-package expand-region
-  :bind
-  ("C-=" . er/expand-region))
-
-(use-package flycheck)
-
 (use-package hlinum
   :config
   (hlinum-activate))
@@ -40,14 +25,6 @@
   :config
   (setq linum-format " %3d ")
   (global-linum-mode nil))
-
-(use-package neotree
-  :config
-  (setq neo-theme 'arrow
-        neotree-smart-optn t
-        neo-window-fixed-size nil)
-  ;; Disable linum for neotree
-  (add-hook 'neo-after-create-hook 'disable-neotree-hook))
 
 (use-package org
   :config
@@ -70,18 +47,6 @@
   :config
   (setq recentf-save-file (recentf-expand-file-name "~/.emacs.d/private/cache/recentf"))
   (recentf-mode 1))
-
-(use-package smartparens)
-
-(use-package smex)
-
-(use-package undo-tree
-  :config
-  ;; Remember undo history
-  (setq
-   undo-tree-auto-save-history nil
-   undo-tree-history-directory-alist `(("." . ,(concat temp-dir "/undo/"))))
-  (global-undo-tree-mode 1))
 
 (use-package which-key
   :config

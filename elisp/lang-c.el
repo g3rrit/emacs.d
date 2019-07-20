@@ -48,16 +48,6 @@
     (define-key map (kbd "C-c <")   'ggtags-prev-mark)
     (define-key map (kbd "C-c >")   'ggtags-next-mark)))
 
-;; company-c-headers
-(use-package company-c-headers
-  :init
-  (add-to-list 'company-backends 'company-c-headers))
-
-(use-package cc-mode
-  :init
-  (define-key c-mode-map  [(tab)] 'company-complete)
-  (define-key c++-mode-map  [(tab)] 'company-complete))
-
 ;; git@github.com:syohex/emacs-counsel-gtags.git
 ;(use-package counsel-gtags
 ;  :load-path "vendor/emacs-counsel-gtags/"
