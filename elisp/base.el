@@ -26,8 +26,8 @@
 (setq default-process-coding-system '(utf-8-unix . utf-8-unix))
 
 ;; Default Font
-;; (set-frame-font "DejaVu Sans Mono" nil t)
-;; (set-frame-font "Courier 10 Pitch" nil t)
+;; (set-frame-font "DejaVu Sans Mono Bold" nil t)
+;; (set-frame-font "Courier 10 Pitch Bold" nil t)
 ;; (set-frame-font "Hack" nil t)
 (set-frame-font "Inconsolata" nil t)
 
