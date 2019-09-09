@@ -1,7 +1,7 @@
 (package-initialize)
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("elpy" . "http://jorgenschaefer.github.io/packages/"))	     
+(add-to-list 'package-archives '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -24,6 +24,12 @@
 (set-selection-coding-system 'utf-8)   ; please
 (prefer-coding-system        'utf-8)   ; with sugar on top
 (setq default-process-coding-system '(utf-8-unix . utf-8-unix))
+
+;; Default Font
+;; (set-frame-font "DejaVu Sans Mono" nil t)
+;; (set-frame-font "Courier 10 Pitch" nil t)
+;; (set-frame-font "Hack" nil t)
+(set-frame-font "Inconsolata" nil t)
 
 ;; Emacs customizations
 (setq confirm-kill-emacs                  'y-or-n-p
