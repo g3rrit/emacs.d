@@ -29,7 +29,7 @@
 ;; (set-frame-font "DejaVu Sans Mono Bold" nil t)
 ;; (set-frame-font "Courier 10 Pitch Bold" nil t)
 ;; (set-frame-font "Hack" nil t)
-(set-frame-font "Inconsolata" nil t)
+(set-frame-font "Inconsolata 12" nil t)
 
 ;; Emacs customizations
 (setq confirm-kill-emacs                  'y-or-n-p
