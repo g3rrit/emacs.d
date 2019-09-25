@@ -12,6 +12,7 @@
 (package-refresh-contents)
 
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
+(add-to-list 'load-path (concat user-emacs-directory "elisp/modes"))
 
 ;; +------------------------------+
 ;; | REQUIRES MODULES             |
@@ -44,5 +45,9 @@
 (require 'comment)
 
 (require 'base-config)
+
+;;; CUSTOM MODES
+
+(require 'cx-mode)
 
 ;; --------------------------------
