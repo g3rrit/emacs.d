@@ -29,4 +29,17 @@
       ;; reformat the buffer using hindent on save
       (setq hindent-reformat-buffer-on-save t))))
 
+;; (use-package lsp-mode ;; Language Server Protocol, used by HIE
+;;   :init
+;;   (add-hook 'haskell-mode-hook #'lsp)
+
+;;   :config
+;;   (setq lsp-prefer-flymake nil)
+;;   )
+
+;; (use-package lsp-ui ;; includes support for flycheck
+;;   )
+
+;; (use-package lsp-haskell)
+
 (provide 'lang-haskell)
