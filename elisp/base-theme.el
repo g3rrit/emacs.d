@@ -1,7 +1,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; (load-theme 'wilmersdorf t)
-(load-theme 'naysayer t)
+(load-theme 'pear t)
 
 
 ;; (use-package solarized-theme
