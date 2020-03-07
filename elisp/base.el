@@ -26,10 +26,15 @@
 (setq default-process-coding-system '(utf-8-unix . utf-8-unix))
 
 ;; Default Font
-;; (set-frame-font "DejaVu Sans Mono Bold" nil t)
-;; (set-frame-font "Courier 10 Pitch Bold" nil t)
-;; (set-frame-font "Hack" nil t)
-(set-frame-font "Inconsolata 12" nil t)
+(cond 
+ ((find-font (font-spec :name "inconsolata"))
+  (set-frame-font "inconsolata-12"))
+ ((find-font (font-spec :name "DejaVu Sans Mono"))
+  (set-frame-font "DejaVu Sans Mono-12"))
+ ((find-font (font-spec :name "Lucida Console"))
+  (set-frame-font "Lucida Console-12"))
+ ((find-font (font-spec :name "courier"))
+  (set-frame-font "courier-12")))
 
 ;; Emacs customizations
 (setq confirm-kill-emacs                  'y-or-n-p
